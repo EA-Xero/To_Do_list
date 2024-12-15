@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body header {
+  background-color: #C10C0C;
+}
+body header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body header nav h1 {
+  color: yellow;
+  margin: 20px;
+}
+body header nav .logo-container {
+  padding-left: 50px;
+}
+body header nav .logo-container .logo {
+  width: 100px;
+  height: auto;
+}
+body header nav .links-list {
+  display: flex;
+  list-style: none;
+  margin-right: 25px;
+}
+body header nav .links-list li {
+  padding: 10px;
+}
+body header nav .links-list li .link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+body header nav .links-list li .link:hover {
+  color: blue;
+}
+body main #main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body main #main section {
+  background-color: #CDCDCD;
+  border-radius: 10px;
+  height: fit-content;
+}
+body main #main section h3 {
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+}
+body main #main section ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body main #main section ul li {
+  border-radius: 15px;
+  color: black;
+  margin: 10px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body main #main section ul li span {
+  padding: 10px;
+}
+body main #main section ul li .task-title {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+body main #main section ul li .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main #main section ul li .buttons .delete {
+  background-color: #C10C0C;
+}
+body main #main section ul li .buttons .complete {
+  background-color: #2cc445;
+}
+body main #main section ul li .buttons .Uncomplete {
+  background-color: #b464bb;
+}
+body main #main section ul li .buttons button {
+  transition: transform 0.5s ease;
+  width: 40%;
+  padding-inline: 30px;
+  border-radius: 15px;
+  border: solid 1px black;
+  margin: 20px;
+  padding: 10px;
+}
+body main #main section ul li .buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+body main #main .not-completed h3 {
+  color: white;
+  background-color: #3A5C83;
+}
+body main #main .not-completed ul li {
+  color: white;
+  background-color: #3A5C83;
+}
+body main #main .completed h3 {
+  background-color: #41B475;
+}
+body main #main .completed ul li {
+  background-color: #41B475;
+}
+body main section {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #CDCDCD;
+}
+body main section h2 {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+body main section #task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main section #task label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  margin: 15px;
+}
+body main section #task label input {
+  height: 40px;
+  font-size: 18px;
+}
+body main section #task button {
+  align-self: center;
+  width: 25%;
+  padding-inline: 20px;
+  padding-block: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  color: white;
+  background-color: #3A5C83;
+  border: solid 1px black;
+  transition: transform 0.5s ease;
+}
+body main section #task button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

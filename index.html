@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Assets/img/Favicom.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TDL</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="Assets/img/Logo.png" alt="Logo to-do-list">
+            </div>
+            <h1>To-Do-List</h1>
+            <ul class="links-list">
+                <li>
+                    <a href="https://ea-xero.github.io/" class="link">About me</a>
+                </li>
+                <li>
+                    <a href="https://linktr.ee/iiixeroiii" class="link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="main">
+            <section class="not-completed">
+                <h3>Not Completed Tasks</h3>
+                <ul class="tasks-list not">
+                    <li class="task">
+                        <span class="task-title">Contacto</span>
+                        <span class="task-info">Contacta conmigo para mas informacion</span>
+                        <span class="task-date">Hoy!</span>
+                        <div class="buttons">
+                            <button class="complete" onclick="event.preventDefault(),completetask(event)">Complete</button>
+                            <button class="delete" onclick="event.preventDefault(),deletetask(event)">Delete</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="completed">
+                <h3>Completed Tasks</h3>
+                <ul class="tasks-list completed">
+                </ul>
+            </section>
+        </div>
+
+        <section>
+            <h2>Add Task</h2>
+            <form id="task" autocomplete="off">
+                <label for="Title-input">*Title
+                    <input type="text" id="task-title" placeholder="Title of task">
+                </label>
+                
+                
+
+                <label for="task-info">*Description
+                    <input type="text" id="task-info" placeholder="Description of task">
+                </label>
+
+                
+
+                <label for="task-date">Date
+                    <input type="date" id="task-date" placeholder="Date of task" aria-placeholder="Date">
+                </label>
+
+                <label for="add-task">
+                    <button onclick="event.preventDefault(),addtask()">
+                        Add
+                    </button>
+                </label>
+
+            </form>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
